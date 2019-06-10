@@ -4,6 +4,8 @@
 #include "ui_Makeup.h"
 #include <Kinect.h>
 #include <qpixmap.h>
+#include <qscroller.h>
+#include <qdir.h>
 
 class Makeup : public QWidget
 {

@@ -6,9 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>740</width>
-    <height>539</height>
+    <width>746</width>
+    <height>542</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>742</width>
+    <height>542</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Makeup</string>
@@ -22,8 +28,43 @@
      <height>539</height>
     </rect>
    </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:transparent;</string>
+   </property>
    <property name="text">
     <string/>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidgetLeft">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>111</width>
+     <height>541</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(255,255,255,50%);</string>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhNone</set>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidgetRight">
+   <property name="geometry">
+    <rect>
+     <x>635</x>
+     <y>0</y>
+     <width>111</width>
+     <height>541</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(255,255,255,50%);</string>
    </property>
   </widget>
  </widget>

@@ -1,6 +1,7 @@
 #include "Makeup.h"
 #include <Kinect.h>
 #include <qtimer.h>
+#include<iostream>
 
 template<class Interface>
 inline void SafeRelease(Interface *& pInterfaceToRelease)
@@ -16,6 +17,43 @@ Makeup::Makeup(QWidget *parent)
 	: QWidget(parent)
 {
 	ui.setupUi(this);
+	/************************************************************************/
+	//This part is for the mouse usage of the listWidget
+	ui.listWidgetLeft->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+	ui.listWidgetLeft->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+	ui.listWidgetLeft->setVerticalScrollMode(QListWidget::ScrollPerPixel);
+	ui.listWidgetLeft->setFrameShape(QListWidget::NoFrame);
+	ui.listWidgetLeft->setViewMode(QListView::IconMode);
+	ui.listWidgetLeft->setIconSize(QSize(ui.listWidgetLeft->width(), ui.listWidgetLeft->width()));
+	QScroller::grabGesture(ui.listWidgetLeft, QScroller::LeftMouseButtonGesture);
+	ui.listWidgetRight->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+	ui.listWidgetRight->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+	ui.listWidgetRight->setVerticalScrollMode(QListWidget::ScrollPerPixel);
+	ui.listWidgetRight->setFrameShape(QListWidget::NoFrame);
+	ui.listWidgetRight->setViewMode(QListView::IconMode);
+	ui.listWidgetRight->setIconSize(QSize(ui.listWidgetRight->width(), ui.listWidgetRight->width()));
+	QScroller::grabGesture(ui.listWidgetRight, QScroller::LeftMouseButtonGesture);
+	/************************************************************************/
+	//add pictures
+	QDir * imagePath = new QDir("./Resources/eardrop/");
+	QStringList filter;
+	filter << "*.png";
+	QList<QFileInfo> *fileInfo = new QList<QFileInfo>(imagePath->entryInfoList(filter));
+	int imageSum = fileInfo->count();
+	QList<QString>  fileNames;
+	fileNames.clear();
+	if (imageSum == 0)
+	{
+		std::cout << "Error!There is no pictures";
+	}
+	for (int i = 0; i < imageSum; i++)
+	{
+		fileNames.append(fileInfo->at(i).filePath());
+	}
+	for (auto tmp : fileNames)
+	{
+		ui.listWidgetLeft->addItem(new QListWidgetItem(QIcon(tmp), ""));
+	}
 
 	m_pKinectSensor = NULL;
 	m_pColorFrameReader = NULL;
@@ -28,6 +66,13 @@ Makeup::Makeup(QWidget *parent)
 
 void Makeup::paintEvent(QPaintEvent * event)
 {
+	int w = width();
+	int h = height();
+	int width = w / 7;
+	ui.listWidgetLeft->setGeometry(0, 0, width, h);
+	ui.listWidgetLeft->setIconSize(QSize(width, width));
+	ui.listWidgetRight->setGeometry(w - width, 0, width, h);
+	ui.listWidgetRight->setIconSize(QSize(width, width));
 	ui.label->resize(this->size());
 }
 
