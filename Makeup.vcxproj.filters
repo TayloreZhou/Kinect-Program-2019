@@ -36,9 +36,15 @@
     <ClCompile Include="Makeup.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="sliderpicture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="Makeup.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="sliderpicture.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
@@ -51,5 +57,178 @@
     <QtRcc Include="Makeup.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
+    <QtRcc Include="sliderpicture.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="img\bg_bottom.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\c1i0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\c1i1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\c1i2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\c1i3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\c1i4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\c1i5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\c2i0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\c2i1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\c2i2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\c2i3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\c2i4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\c2i5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\c3i0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\c3i1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\c3i2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\c3i3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\c3i4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\c3i5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\c4i0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\c4i1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\c4i2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\c4i3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\c4i4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\c4i5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\cate0.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\cate1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\cate2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\cate3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\close.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\close_hover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\close_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\info0_0.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\info0_1.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\info0_2.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\info0_3.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\info0_4.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\info0_5.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\info1_0.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\info1_1.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\info1_2.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\info1_3.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\info1_4.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\info1_5.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\info2_0.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\info2_1.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\info2_2.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\info2_3.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\info2_4.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\info2_5.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\info3_0.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\info3_1.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\info3_2.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\info3_3.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\info3_4.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="img\info3_5.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

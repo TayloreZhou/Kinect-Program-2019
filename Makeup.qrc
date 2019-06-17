@@ -1,15 +1,28 @@
 <RCC>
     <qresource prefix="/Makeup">
-        <file>Resources/bracelet/bracelet_1.png</file>
-        <file>Resources/eardrop/eardrop_1.png</file>
-        <file>Resources/eardrop/eardrop_2.png</file>
-        <file>Resources/eardrop/eardrop_3.png</file>
-        <file>Resources/eardrop/eardrop_4.png</file>
-        <file>Resources/eardrop/eardrop_5.png</file>
-        <file>Resources/eardrop/eardrop_6.png</file>
-        <file>Resources/eardrop/eardrop_7.png</file>
-        <file>Resources/eardrop/eardrop_7_1.png</file>
-        <file>Resources/hat/hat_1.png</file>
-        <file>Resources/necklace/necklace_1.png</file>
+        <file>Resources/bracelet/bracelet_0_.png</file>
+        <file>Resources/bracelet/bracelet_1_.png</file>
+        <file>Resources/bracelet/bracelet_2_.png</file>
+        <file>Resources/bracelet/bracelet_3_.png</file>
+        <file>Resources/bracelet/bracelet_4_.png</file>
+        <file>Resources/bracelet/bracelet_5_.png</file>
+        <file>Resources/hat/hat_0_.png</file>
+        <file>Resources/hat/hat_1_.png</file>
+        <file>Resources/hat/hat_2_.png</file>
+        <file>Resources/hat/hat_3_.png</file>
+        <file>Resources/hat/hat_4_.png</file>
+        <file>Resources/hat/hat_5_.png</file>
+        <file>Resources/necklace/necklace_4_.png</file>
+        <file>Resources/necklace/necklace_0_.png</file>
+        <file>Resources/necklace/necklace_1_.png</file>
+        <file>Resources/necklace/necklace_2_.png</file>
+        <file>Resources/necklace/necklace_3_.png</file>
+        <file>Resources/necklace/necklace_5_.png</file>
+        <file>Resources/eardrop/eardrop_0_.png</file>
+        <file>Resources/eardrop/eardrop_1_.png</file>
+        <file>Resources/eardrop/eardrop_2_.png</file>
+        <file>Resources/eardrop/eardrop_3_.png</file>
+        <file>Resources/eardrop/eardrop_4_.png</file>
+        <file>Resources/eardrop/eardrop_5_.png</file>
     </qresource>
 </RCC>

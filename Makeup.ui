@@ -7,8 +7,14 @@
     <x>0</x>
     <y>0</y>
     <width>746</width>
-    <height>542</height>
+    <height>543</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>64</horstretch>
+    <verstretch>53</verstretch>
+   </sizepolicy>
   </property>
   <property name="minimumSize">
    <size>
@@ -16,8 +22,17 @@
     <height>542</height>
    </size>
   </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="tabletTracking">
+   <bool>true</bool>
+  </property>
   <property name="windowTitle">
    <string>Makeup</string>
+  </property>
+  <property name="inputMethodHints">
+   <set>Qt::ImhNone</set>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
@@ -27,6 +42,12 @@
      <width>737</width>
      <height>539</height>
     </rect>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
    </property>
    <property name="autoFillBackground">
     <bool>false</bool>
@@ -47,24 +68,176 @@
      <height>541</height>
     </rect>
    </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
    <property name="styleSheet">
     <string notr="true">background-color:rgba(255,255,255,50%);</string>
    </property>
    <property name="inputMethodHints">
     <set>Qt::ImhNone</set>
    </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="showDropIndicator" stdset="0">
+    <bool>false</bool>
+   </property>
+   <property name="dragDropMode">
+    <enum>QAbstractItemView::NoDragDrop</enum>
+   </property>
+   <property name="modelColumn">
+    <number>0</number>
+   </property>
+   <property name="itemAlignment">
+    <set>Qt::AlignCenter</set>
+   </property>
   </widget>
-  <widget class="QListWidget" name="listWidgetRight">
+  <widget class="QPushButton" name="bhat">
    <property name="geometry">
     <rect>
-     <x>635</x>
+     <x>650</x>
      <y>0</y>
-     <width>111</width>
-     <height>541</height>
+     <width>91</width>
+     <height>71</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color:rgba(255,255,255,50%);</string>
+   </property>
+   <property name="text">
+    <string>Hat</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="beardrop">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>70</y>
+     <width>91</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(255,255,255,50%);</string>
+   </property>
+   <property name="text">
+    <string>Eardrop</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bnecklace">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>140</y>
+     <width>91</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(255,255,255,50%);</string>
+   </property>
+   <property name="text">
+    <string>Necklace</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bbracelet">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>210</y>
+     <width>91</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(255,255,255,50%);</string>
+   </property>
+   <property name="text">
+    <string>bracelet</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bback">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>280</y>
+     <width>91</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(255,255,255,50%);</string>
+   </property>
+   <property name="text">
+    <string>back</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bexit">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>350</y>
+     <width>91</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgba(255,255,255,50%);</string>
+   </property>
+   <property name="text">
+    <string>Exit</string>
    </property>
   </widget>
  </widget>
